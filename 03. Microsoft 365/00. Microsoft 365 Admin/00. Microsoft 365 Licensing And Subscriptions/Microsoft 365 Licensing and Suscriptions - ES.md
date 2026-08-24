@@ -1,5 +1,7 @@
 # Microsoft 365 Licensing And Subscriptions
 
+<img width="615" height="367" alt="image" src="https://github.com/user-attachments/assets/94873423-0609-4840-8183-0e484a6d0334" />
+
 ## Suscripciones Vs Licencias
 
 - **Suscripción**: lo que se paga mensualmente (ej. Microsoft 365 E5).
