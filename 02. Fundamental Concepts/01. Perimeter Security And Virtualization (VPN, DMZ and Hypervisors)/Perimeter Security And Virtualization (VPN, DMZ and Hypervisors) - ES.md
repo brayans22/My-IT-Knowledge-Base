@@ -2,6 +2,8 @@
 
 Resumen de cómo las empresas conectaban de forma segura a usuarios remotos, exponían servicios a Internet sin comprometer la red interna, y cómo la virtualización sentó las bases de la computación en la nube.
 
+<img width="644" height="352" alt="image" src="https://github.com/user-attachments/assets/c69f6e2c-e6aa-4089-b126-97aff3c066bf" />
+
 ## The Remote Access Problem
 
 Con el trabajo desde casa cada vez más habitual, los usuarios necesitan acceder a servicios internos (servidor de archivos, SQL, Microsoft Exchange, SharePoint) sin estar físicamente en la oficina.
