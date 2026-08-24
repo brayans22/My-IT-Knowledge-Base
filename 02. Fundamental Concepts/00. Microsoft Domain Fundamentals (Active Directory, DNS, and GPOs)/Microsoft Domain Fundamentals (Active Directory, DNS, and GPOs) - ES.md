@@ -2,6 +2,9 @@
 
 Resumen de los conceptos clave para entender la gestión de entornos Microsoft on-premise: de las redes peer-to-peer a la centralización con Active Directory, autenticación, resolución de nombres y políticas de grupo.
 
+<img width="382" height="359" alt="image" src="https://github.com/user-attachments/assets/f4f817e1-3fa3-41bc-b722-4ff14721813e" />
+
+
 ## De los mainframes a las redes peer-to-peer
 
 - **Años 50-60**: mainframes gigantes con tubos de vacío.
