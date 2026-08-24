@@ -2,8 +2,7 @@
 
 Resumen de los tres modelos de servicio en la nube que ofrece Microsoft (principalmente a través de Azure y Microsoft 365), con ejemplos prácticos de cada uno.
 
-<img width="508" height="190" alt="image" src="https://github.com/user-attachments/assets/a3b5d2f9-02e3-444e-9c89-3d15b124cadd" />
-
+<img width="504" height="176" alt="image" src="https://github.com/user-attachments/assets/379c7f70-80ef-4acc-a2b4-9085d46af909" />
 
 ## Tabla comparativa
 
