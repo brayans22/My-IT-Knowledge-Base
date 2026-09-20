@@ -1,0 +1,177 @@
+# Administración de Microsoft Teams
+
+> 📌 **Tema de la clase:** Tipos de administración de Microsoft Teams desde el Centro de Administración (`admin.microsoft.com`).
+
+---
+
+## 1. Acceso al Centro de Administración de Teams
+
+- Entrar a `admin.microsoft.com`.
+- Hacer clic en **Mostrar todo** en el menú lateral.
+- Buscar y seleccionar **Teams** → esto abre el **Centro de Administración de Teams**.
+- En el menú izquierdo, desplegar **Equipos** → **Administrar Equipos**, donde se ven todos los equipos existentes.
+
+
+
+---
+
+## 2. Creación de un equipo
+
+Hay dos formas de crear un equipo:
+
+1. **Automática:** al crear un grupo de Microsoft 365, este puede generar un equipo automáticamente.
+2. **Manual (como administrador):** desde el Centro de Administración de Teams, botón **Añadir**.
+
+Al crear el equipo manualmente se configura:
+
+- **Nombre del equipo** (ej. "Equipo de Aplicación de Migración").
+- **Descripción**.
+- **Propietarios del equipo** (por defecto, quien lo crea; se pueden añadir más).
+- **Sensibilidad**: asociada a etiquetas de sensibilidad/clasificación (puede no estar visible según el entorno).
+- **Privacidad**:
+  - **Privado:** no aparece en la Galería de Equipos, hay que invitar a la gente.
+  - **Público:** visible para todos en la Galería de Equipos, cualquiera puede unirse sin aprobación.
+
+> 💡 **Consejo:** Definir bien la privacidad desde el inicio, ya que condiciona quién puede ver y unirse al equipo.
+
+> 🖼️ *[Espacio para captura: formulario de creación de equipo]*
+
+### Vista desde el usuario
+
+- Ir a `www.office.com` → abrir la app **Teams** (versión web) desde la hoja de aplicaciones.
+- El equipo recién creado aparecerá disponible para los usuarios con acceso.
+
+> 🖼️ *[Espacio para captura: Teams visto desde office.com]*
+
+---
+
+## 3. Gestión de equipos existentes
+
+Desde **Administrar Equipos** se puede:
+
+- Añadir o quitar **propietarios**.
+- Añadir o quitar **miembros**.
+- Añadir **canales** adicionales (además del canal **General** que viene por defecto).
+
+### Tipos de canal
+
+| Tipo | Accesible para... |
+|------|--------------------|
+| **Estándar** | Todos los miembros del equipo |
+| **Privado** | Solo un grupo específico de personas dentro del equipo |
+| **Compartido** | Personas dentro y fuera de la organización (incluye invitados/usuarios externos) |
+
+> 🖼️ *[Espacio para captura: creación de un canal]*
+
+---
+
+## 4. Configuración específica de un equipo (pestaña "Configuración")
+
+### General
+- Información básica: nombre, descripción, nivel de privacidad.
+- ⚠️ La privacidad es especialmente importante en equipos con información sensible (solo miembros invitados pueden unirse en modo privado).
+
+### Permisos (de los **miembros**, no de los propietarios)
+
+Controla qué pueden hacer los miembros dentro del equipo, por ejemplo:
+
+- Editar mensajes ya enviados (corregir errores tipográficos, etc.).
+- Añadir y editar canales (crear canales de pruebas, registros, etc.).
+- Añadir pestañas.
+- Instalar aplicaciones.
+- Añadir conectores.
+- Eliminar canales.
+
+> 💡 **Consejos de buenas prácticas:**
+> - Si la organización necesita un **entorno estrictamente controlado** (ej. un departamento donde solo los propietarios gestionan la estructura), **desactivar** estos permisos.
+> - Para **proyectos técnicos o equipos muy colaborativos**, **dejar estos permisos activados** da flexibilidad a los miembros para organizar su espacio de trabajo.
+> - En la mayoría de los casos, se recomienda **dejar estas opciones activadas por defecto**.
+
+> 🖼️ *[Espacio para captura: panel de permisos del equipo]*
+
+---
+
+## 5. Configuración global de Teams ("Configuración de Equipos")
+
+> ⚠️ Estos ajustes aplican a **toda la organización**, salvo que se anulen mediante políticas específicas.
+
+### 5.1 Notificaciones y Feeds
+- Controla si Teams sugiere canales o temas recomendados según la actividad del usuario (ej. sugerir el canal de Finanzas si el usuario colabora frecuentemente con ese equipo).
+
+### 5.2 Etiquetas (Tagging)
+- Permiten agrupar personas dentro de un equipo **sin crear nuevos grupos de seguridad**.
+- Se puede configurar:
+  - **Quién puede gestionar las etiquetas** (solo propietarios, o también miembros).
+  - Si los **propietarios pueden cambiar** quién gestiona las etiquetas.
+  - **Etiquetas sugeridas** (ej. gerentes, recepción, diseñadores).
+  - **Etiquetas personalizadas** (creadas manualmente por los usuarios).
+  - **Etiquetas aplicadas por la app de Turnos** (útil en entornos como hospitales o comercios, con etiquetas de tipo "turno de mañana", "turno de noche", etc.).
+
+> 🖼️ *[Espacio para captura: configuración de etiquetas]*
+
+### 5.3 Integración de correo electrónico
+- Permite que los mensajes de correo lleguen directamente a los canales de Teams.
+- Cada canal tiene su propia dirección de correo electrónico.
+- **Aceptar correo de canal solo desde dominios SMTP específicos**: permite restringir qué dominios pueden enviar correos a Teams (ej. permitir solo `examlabpractice.com`).
+
+> 💡 **Consejo:** Útil para escenarios como recibir comentarios de clientes directamente en un canal.
+
+### 5.4 Archivos
+- Define qué **servicios de almacenamiento en la nube** están disponibles para vincular o guardar archivos en los chats de Teams.
+- Se puede desactivar servicios que no se quieran soportar (ej. Dropbox).
+
+### 5.5 Organización
+- **Mostrar la pestaña Organización**: habilita el organigrama dentro de Teams (quién reporta a quién).
+- Útil especialmente en escenarios de **onboarding**.
+
+### 5.6 Dispositivos (Surface Hub / salas de conferencias)
+- **Requerir una forma secundaria de autenticación**: controla si el contenido de la reunión es visible sin ingresar un PIN adicional.
+- Se puede configurar un **PIN de contenido** para evitar que se comparta la pantalla sin autorización.
+- **Cuentas de Surface Hub pueden enviar correos**: permite que el dispositivo de sala envíe por email pizarras, capturas o notas de la reunión.
+
+### 5.7 Buscar por nombre
+- **Restringir la búsqueda de directorio** usando una política de libreta de direcciones de Exchange (limita a quién pueden encontrar los usuarios).
+- Mostrar detalles adicionales de trabajo y sugerencias de búsqueda de personas (departamento, ubicación, etc.).
+
+### 5.8 Seguridad y Comunicación
+- **Permisos de chat basados en roles**: permite limitar quién puede chatear con quién.
+  - Ejemplo: en un entorno escolar, bloquear el chat entre alumnos, pero permitir chat alumno–profesor.
+
+### 5.9 Canales Compartidos
+- Define cómo colaboran los usuarios con **organizaciones externas** en canales compartidos.
+- Requiere que ambas organizaciones aprueben la conexión mediante **"Conexión Directa de Empresa a Empresa"**.
+
+> 💡 **Consejo:** Esencial en escenarios de colaboración con **proveedores o contratistas externos** (business-to-business).
+
+### 5.10 Red
+- Controla el **dominio** que usan los clientes de Teams para conectarse a los servicios en la nube de Microsoft.
+- **Microsoft Default** (opción recomendada): usa el dominio de enrutamiento estándar (`teams.cloud.microsoft`), gestionado automáticamente por Microsoft.
+- **Desactivado**: fuerza un enrutamiento heredado ("específico del inquilino"), usado en casos especiales como entornos de red muy restringidos con proxy personalizado.
+
+> 💡 **Consejo:** 
+> - Si se usa el dominio unificado (por defecto), el equipo de firewall solo necesita permitir `teams.cloud.microsoft`.
+> - Si se desactiva, el firewall deberá permitir múltiples endpoints antiguos de Teams (documentados por Microsoft).
+> - **En la mayoría de los casos, se recomienda dejar esta opción en su valor por defecto** y no modificarla salvo necesidad específica.
+
+> 🖼️ *[Espacio para captura: configuración de Red]*
+
+---
+
+## 6. Resumen de consejos clave (buenas prácticas)
+
+- ✅ Definir bien la **privacidad** del equipo desde su creación (privado vs. público).
+- ✅ Usar canales **privados** para información sensible y **compartidos** para colaboración externa.
+- ✅ En entornos colaborativos/técnicos, **dejar activados** los permisos de personalización de los miembros.
+- ✅ En entornos que requieren control estricto (ciertos departamentos), **restringir permisos** de los miembros.
+- ✅ Usar **etiquetas** en lugar de crear grupos de seguridad nuevos para agrupar personas.
+- ✅ Restringir el **correo de canal** a dominios SMTP conocidos si se necesita mayor seguridad.
+- ✅ Activar la pestaña de **Organización** para facilitar el onboarding de nuevos usuarios.
+- ✅ Configurar un **PIN de contenido** en salas de reuniones (Surface Hub) para evitar accesos no autorizados.
+- ✅ Usar **Canales Compartidos** solo cuando se necesite colaboración B2B con conexión directa aprobada.
+- ✅ Dejar la configuración de **Red** en su valor por defecto (**Microsoft Default**) salvo que existan restricciones especiales de firewall.
+
+---
+
+## 7. Notas finales
+
+Esta clase es una introducción general a la administración de Microsoft Teams; no es una inmersión profunda. Se mencionan también otros temas relacionados que se tratarán más adelante, como las **políticas de equipos** y las restricciones más avanzadas.
